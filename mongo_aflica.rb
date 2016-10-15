@@ -25,11 +25,12 @@ offer_detail = open(ARGV[3]) do |io|
 end
 
 #connection = Mongo::Connection.new
-#client = Mongo::Client.new(['172.17.0.4:27017'],:database => 'wasepa')
-client = Mongo::Client.new(['172.17.0.1:27017'],:database => 'wasepa')
+#client = Mongo::Client.new(['172.17.0.4:27017'],:database => 'Africa')
+#client = Mongo::Client.new(['172.17.0.1:27017'],:database => 'Africa')
+client = Mongo::Client.new(['africadev_db_1:27017'],:database => 'africa')
 
 ##choice database
-#db = connection.db('wasepa')
+#db = connection.db('Africa')
 db = client.database
 
 docs = []
